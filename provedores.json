@@ -1,0 +1,58 @@
+[
+    {
+        "folio": "PROV_69b1a3c139e74",
+        "nombre": "Provedor B",
+        "direccion": "Address B",
+        "telefono": "987654321",
+        "correo": "provedorB@example.com",
+        "productos": []
+    },
+    {
+        "folio": "PROV_2c8e5a4b7f1d6",
+        "nombre": "Provedor C",
+        "direccion": "Address C",
+        "telefono": "112233445",
+        "correo": "provedorC@example.com",
+        "productos": []
+    },
+    {
+        "folio": "PROV_9d3e5f6a7b8c2",
+        "nombre": "Provedor D",
+        "direccion": "Address D",
+        "telefono": "111222333",
+        "correo": "provedorD@example.com",
+        "productos": []
+    },
+    {
+        "folio": "PROV_1a2b3c4d5e6f7",
+        "nombre": "Provedor E",
+        "direccion": "Address E",
+        "telefono": "111222334",
+        "correo": "provedorE@example.com",
+        "productos": []
+    },
+    {
+        "folio": "PROV_8g7h6i5j4k3l2",
+        "nombre": "Provedor F",
+        "direccion": "Address F",
+        "telefono": "111222335",
+        "correo": "provedorF@example.com",
+        "productos": []
+    },
+    {
+        "folio": "PROV_9m8n7o6p5q4r3",
+        "nombre": "Provedor G",
+        "direccion": "Address G",
+        "telefono": "111222336",
+        "correo": "provedorG@example.com",
+        "productos": []
+    },
+    {
+        "folio": "PROV_2s1t4u3v6w5x8",
+        "nombre": "Provedor H",
+        "direccion": "Address H",
+        "telefono": "111222337",
+        "correo": "provedorH@example.com",
+        "productos": []
+    }
+]

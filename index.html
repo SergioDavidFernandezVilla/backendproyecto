@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inventario de Productos</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Gestión de Productos</h1>
+
+    <header class="header_menu">
+      <ul class="ul_menu">
+        <li class="li_menu">
+          <a href="./src/inicio.html" class="link_menu">Inicio</a>
+        </li>
+        <li class="li_menu">
+          <a href="./src/ticket/ticket.html" class="link_menu">Tickets</a>
+        </li>
+
+        <li class="li_menu">
+          <a href="index.html" class="link_menu">Productos</a>
+        </li>
+
+        <li class="li_menu">
+          <a href="./src/provedores/provedores.html" class="link_menu"
+            >Provedores</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section>
+      <h2>Agregar Producto</h2>
+      <form id="form-crear">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre" required />
+
+        <label for="">Precio:</label>
+        <input type="number" name="precio" placeholder="Precio" required />
+
+        <label for="">Stock:</label>
+        <input type="number" name="stock" placeholder="Stock" required />
+
+        <label for="provedor">Proveedor:</label>
+        <select name="provedor" id="select-provedores" required>
+          <option value="">Seleccione un proveedor</option>
+        </select>
+
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <div class="modal" id="modal-editar">
+      <div class="modal-contenido">
+        <h2>Editar Producto</h2>
+        <form id="form-editar" class="modal-form-editar">
+          <input type="hidden" name="folio" />
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" placeholder="Nombre" required />
+
+          <label for="precio">Precio:</label>
+          <input type="number" name="precio" placeholder="Precio" required />
+
+          <label for="stock">Stock:</label>
+          <input type="number" name="stock" placeholder="Stock" required />
+
+          <label for="provedor">Proveedor:</label>
+          <select name="provedor" id="select-provedores-editar" required>
+            <option value="">Seleccione un proveedor</option>
+          </select>
+
+          <button type="submit">Actualizar</button>
+          <button type="button" id="cerrar-modal">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
+    <section>
+      <h2>Buscar Producto por Folio</h2>
+
+      <!-- Formulario de búsqueda por folio -->
+      <form method="get" id="form-buscar-folio">
+        <input type="text" name="folio" placeholder="Buscar por folio" />
+        <button type="submit">Buscar</button>
+        <button type="button" id="btn-limpiar">Limpiar filtro</button>
+      </form>
+
+      <p>Listas de productos</p>
+
+      <span class="span" id="folio_filtro"> </span>
+
+      <table id="tabla-productos">
+        <thead>
+          <tr>
+            <th>Folio</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Provedores</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

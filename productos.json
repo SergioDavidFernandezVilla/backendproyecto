@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "manzana",
+        "precio": 20,
+        "stock": 12,
+        "folio": "FOLIO_6817c84bcb8b2",
+        "provedor": "Provedor G"
+    },
+    {
+        "nombre": "Laptop",
+        "precio": 7000,
+        "stock": 5,
+        "folio": "FOLIO_6817cb41d37b8",
+        "provedor": "Provedor A"
+    },
+    {
+        "nombre": "bananas",
+        "precio": 30,
+        "stock": 20,
+        "folio": "FOLIO_6817cb82599d6",
+        "provedor": "Provedor H"
+    },
+    {
+        "nombre": "Tubo",
+        "precio": 2211,
+        "stock": 2,
+        "provedor": "Provedor C",
+        "folio": "FOLIO_68186c2b963cd"
+    }
+]

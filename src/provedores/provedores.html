@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestión de Proveedores</title>
+    <link rel="stylesheet" href="provedores.css" />
+  </head>
+  <body>
+    <header class="header_menu">
+      <ul>
+        <li>
+          <h1>Gestión de Proveedores de Tienda Online</h1>
+        </li>
+      </ul>
+      <ul class="ul_menu">
+        <li class="li_menu">
+          <a href="../inicio.html" class="link_menu">Inicio</a>
+        </li>
+        <li class="li_menu">
+          <a href="../ticket/ticket.html" class="link_menu">Tickets</a>
+        </li>
+
+        <li class="li_menu">
+          <a href="../../index.html" class="link_menu">Productos</a>
+        </li>
+
+        <li class="li_menu">
+          <a
+            href="../provedores/provedores.html"
+            class="link_menu"
+            aria-disabled="false"
+            >Provedores</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <h2>Agregar nuevo proveedor</h2>
+    <form id="form-agregar">
+      <input type="text" name="nombre" placeholder="Nombre" required />
+      <input type="text" name="direccion" placeholder="Dirección" required />
+      <input type="text" name="telefono" placeholder="Teléfono" required />
+      <input type="email" name="correo" placeholder="Correo" required />
+      <button type="submit">Agregar</button>
+    </form>
+
+    <h3>Buscar proveedor por folio</h3>
+    <form id="form-buscar">
+      <input
+        type="text"
+        id="input-folio"
+        placeholder="Folio del proveedor"
+        required
+      />
+      <button type="submit">Buscar</button>
+      <button type="button" id="btn-limpiar">Mostrar todos</button>
+    </form>
+    <div id="resultado-busqueda"></div>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Folio</td>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-proveedores"></tbody>
+    </table>
+
+    <!-- Modal de edición -->
+    <div id="modal" class="modal oculto">
+      <div class="modal-contenido">
+        <h2>Editar Proveedor</h2>
+        <form id="form-editar" class="modal-form-editar">
+          <input type="hidden" name="indice" />
+
+          <label for="nombre-input">Nombre:</label>
+          <input type="text" name="nombre" placeholder="Nombre" required />
+
+          <label for="direccion-input">DIreccion:</label>
+          <input
+            type="text"
+            name="direccion"
+            placeholder="Dirección"
+            required
+          />
+          <label for="telefono-input">Teléfono:</label>
+          <input type="text" name="telefono" placeholder="Teléfono" required />
+          <label for="correo-input">Correo:</label>
+          <input type="email" name="correo" placeholder="Correo" required />
+          <button type="submit">Guardar Cambios</button>
+          <button type="button" onclick="cerrarModal()">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="provedores.js"></script>
+  </body>
+</html>
